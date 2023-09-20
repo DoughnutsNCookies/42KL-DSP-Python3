@@ -4,17 +4,17 @@ from abc import ABC, abstractmethod
 class Character(ABC):
     """Character Class"""
     @abstractmethod
-    def __init__(self, name, is_alive=True):
+    def __init__(self, first_name, is_alive=True):
         """Character Init"""
-        self.first_name = name
+        self.first_name = first_name
         self.is_alive = is_alive
 
 
 class Stark(Character):
     """Stark Class"""
-    def __init__(self, name, is_alive=True):
+    def __init__(self, first_name, is_alive=True):
         """Stark Init"""
-        self.first_name = name
+        self.first_name = first_name
         self.is_alive = is_alive
 
     def die(self):
