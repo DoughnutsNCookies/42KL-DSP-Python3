@@ -9,11 +9,6 @@ class Character(ABC):
         self.first_name = name
         self.is_alive = is_alive
 
-    @abstractmethod
-    def change_health_state(self):
-        """Character Change Health"""
-        pass
-
 
 class Stark(Character):
     """Stark Class"""
@@ -21,10 +16,6 @@ class Stark(Character):
         """Stark Init"""
         self.first_name = name
         self.is_alive = is_alive
-
-    def change_health_state(self):
-        """Stark Change Health State"""
-        self.is_alive = not self.is_alive
 
     def die(self):
         """Stark Die"""

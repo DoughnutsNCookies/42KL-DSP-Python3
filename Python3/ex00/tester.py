@@ -12,14 +12,6 @@ print("---")
 Lyanna = Stark("Lyanna", False)
 print(Lyanna.__dict__)
 
-print("---")
-Lyanna.change_health_state()
-print(Lyanna.is_alive)
-Lyanna.change_health_state()
-print(Lyanna.is_alive)
-Lyanna.change_health_state()
-print(Lyanna.is_alive)
-
 # from S1E9 import Character
 
 # try:
