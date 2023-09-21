@@ -42,6 +42,10 @@ class Lannister(Character):
         """Lannister Repr"""
         return self.__str__()
 
+    def die(self):
+        """Lannister Die"""
+        self.is_alive = False
+
     @staticmethod
     def create_lannister(first_name, is_alive):
         """Lannister Create"""
