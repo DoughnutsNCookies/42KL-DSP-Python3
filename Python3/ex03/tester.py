@@ -10,4 +10,7 @@ v3 = calculator([10.0, 15.0, 20.0])
 v3 - 5
 v3 / 5
 
-# v3 / 0
+try:
+    v3 / 0
+except Exception as err:
+    print(err)

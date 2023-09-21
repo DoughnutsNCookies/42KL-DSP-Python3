@@ -1,4 +1,5 @@
 from S1E9 import Stark
+from S1E9 import Character
 
 Ned = Stark("Ned")
 print(Ned.__dict__)
@@ -12,9 +13,7 @@ print("---")
 Lyanna = Stark("Lyanna", False)
 print(Lyanna.__dict__)
 
-# from S1E9 import Character
-
-# try:
-#     hodor = Character("hodor")
-# except Exception as err:
-#     print(err)
+try:
+    hodor = Character("hodor")
+except Exception as err:
+    print(err)
